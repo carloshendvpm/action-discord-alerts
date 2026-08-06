@@ -24,7 +24,7 @@ jobs:
 
       - name: Action Discord Alert
         if: always()
-        uses: ErnaneJ/action-discord-alerts@1.1.3
+        uses: ErnaneJ/action-discord-alerts@main
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}     
           status: ${{ job.status }}
